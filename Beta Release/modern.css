@@ -1,0 +1,1153 @@
+/*
+
+This is a css library made by A.A2006
+
+*/
+
+:root {
+    --primary : #3489eb;
+    --secondary : #808080;
+    --success : #00e600;
+    --fail : #ff5c19;
+    --danger : #ff0000;
+    --warning : #ffff00;
+    --info : #17a2b8;
+    --light : #f5f5f5;
+    --dark : #333;
+    --redLink : #ff0000;
+    --blueLink : #0000ff;
+    --basic : silver;
+
+    /* hover color effects */
+
+    --hprimary : #156cd1;
+    --hsecondary : #666666;
+    --hsuccess : #00b300;
+    --hfail : #e64100;
+    --hdanger : #cc0000;
+    --hwarning : #cccc00;
+    --hinfo : #008080;
+    --hlight : #e6e6e6;
+    --hdark : #1a1a1a;
+    --hredLink : #cc0000;
+    --hblueLink : #0000cc;
+    --hbasic : #a6a6a6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+  }
+
+/*----------------------Divisors-------------------------*/
+
+.section-1 {
+    padding : 0 150px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-2 {
+    padding : 0 100px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-3 {
+    padding : 0 60px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-full {
+    padding : 0 2px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*-------------------------Buttons--------------------------*/
+.btn {
+    outline: none;
+    border-style: solid;
+}
+
+.btn-basic {
+    color: black;
+    background-color: silver;
+    border-radius: 3px;
+    border: solid silver 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-basic:hover {
+    background: var(--hbasic);
+    border-color: var(--hbasic);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--primary);
+    border-radius: 3px;
+    border: solid var(--primary) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-primary:hover {
+    background: var(--hprimary);
+    border-color: var(--hprimary);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: var(--secondary);
+    border-radius: 3px;
+    border: solid var(--secondary) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-secondary:hover {
+    background: var(--hsecondary);
+    border-color: var(--hsecondary);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-success {
+    color: white;
+    background-color: var(--success);
+    border-radius: 3px;
+    border: solid var(--success) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-success:hover {
+    background: var(--hsuccess);
+    border-color: var(--hsuccess);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-fail {
+    color: white;
+    background-color: var(--fail);
+    border-radius: 3px;
+    border: solid var(--fail) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-fail:hover {
+    background: var(--hfail);
+    border-color: var(--hfail);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-danger {
+    color: white;
+    background-color: var(--danger);
+    border-radius: 3px;
+    border: solid var(--danger) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-danger:hover {
+    background: var(--hdanger);
+    border-color: var(--hdanger);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-warning {
+    color: black;
+    background-color: var(--warning);
+    border-radius: 3px;
+    border: solid var(--warning) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-warning:hover {
+    background: var(--hwarning);
+    border-color: var(--hwarning);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-info {
+    color: white;
+    background-color: var(--info);
+    border-radius: 3px;
+    border: solid var(--info) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-info:hover {
+    background: var(--hinfo);
+    border-color: var(--hinfo);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-light {
+    color: black;
+    background-color: var(--light);
+    border-radius: 3px;
+    border: solid var(--light) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-light:hover {
+    background: var(--hlight);
+    border-color: var(--hlight);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-dark {
+    color: white;
+    background-color: var(--dark);
+    border-radius: 3px;
+    border: solid var(--dark) 4px;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-dark:hover {
+    background: var(--hdark);
+    border-color: var(--hdark);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+.btn-link-red {
+    color: var(--redLink);
+    background: none;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-link-red:hover {
+    color: var(--hredLink);
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-link-blue {
+    color: var(--blueLink);
+    background: none;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-link-blue:hover {
+    color: var(--hblueLink);
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-block {
+    color: white;
+    background: var(--basic);
+    border-radius: 3px;
+    border: solid var(--basic) 4px;
+    height: 30px;
+    width: calc(100% - 10px);
+    cursor: pointer;
+    outline: hidden;
+}
+
+.btn-block:hover {
+    background: var(--hbasic);
+    border-color: var(--hbasic);
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: border-color;
+    transition-duration: 0.012s;
+    transition-timing-function: linear;
+}
+
+
+/* ---- outline buttons ---- */
+
+.btn-outline-basic {
+    color: var(--basic);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--basic);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-basic:hover {
+    color: #333;
+    background: var(--basic);
+    border: solid var(--basic) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--primary);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background: var(--primary);
+    border: solid var(--primary) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-secondary {
+    color: var(--secondary);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--secondary);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-secondary:hover {
+    color: white;
+    background: var(--secondary);
+    border: solid var(--secondary) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-success {
+    color: var(--success);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--success);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background: var(--success);
+    border: solid var(--success) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-fail {
+    color: var(--fail);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--fail);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-fail:hover {
+    color: white;
+    background: var(--fail);
+    border: solid var(--fail) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-danger {
+    color: var(--danger);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--danger);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-danger:hover {
+    color: white;
+    background: var(--danger);
+    border: solid var(--danger) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-warning {
+    color: var(--warning);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--warning);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-warning:hover {
+    color: black;
+    background: var(--warning);
+    border: solid var(--warning) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-info {
+    color: var(--info);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--info);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-info:hover {
+    color: white;
+    background: var(--info);
+    border: solid var(--info) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-light {
+    color: var(--light);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--light);
+    border-style: solid;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-light:hover {
+    color: black;
+    background: var(--light);
+    border: solid var(--light) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+.btn-outline-dark {
+    color: var(--dark);
+    background: none;
+    border-radius: 3px;
+    border-color: var(--dark);
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-outline-dark:hover {
+    color: white;
+    background: var(--dark);
+    border: solid var(--dark) 2px;
+    transition-property: background;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+    transition-property: color;
+    transition-duration: 0.12s;
+    transition-timing-function: linear;
+}
+
+/* ---- Inputs ---- */
+
+input {
+    outline: none;
+    border-style: solid;
+    border-color: rgb(128,128,128);
+    color: #222;
+}
+
+.input-s {
+    width: 175px;
+    height: 30px;
+    font-size: 13.3333px;
+}
+.input-m {
+    width: 275px;
+    height: 40px;
+    font-size: 17.7777px;
+}
+.input-l {
+    width: 375px;
+    height: 50px;
+    font-size: 21.1111px;
+}
+.input-xl {
+    width: 475px;
+    height: 60px;
+    font-size: 25.5555px;
+}
+.input-xxl {
+    width: 575px;
+    height: 70px;
+    font-size: 29.9999px;
+}
+.input-max {
+    width: calc(100% - 10px);
+    height: 70px;
+    font-size: 29.9999px;
+}
+
+/*------Fonts------*/
+
+.f1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+.f2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.f3 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.f4 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.f5 {
+    font-size: 35px;
+    font-weight: bold;
+}
+.f6 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.f7 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.f8 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.f9 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.f10 {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/*-------------------------Text-formats--------------------------*/
+
+.align-center {
+    text-align: center;
+}
+
+.aling-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* ----------------- Colors and backgrounds ----------------- */
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.success {
+    color: var(--success);
+}
+
+.fail {
+    color: var(--fail);
+}
+
+.danger {
+    color: var(--danger);
+}
+
+.warning {
+    color: var(--warning)
+}
+
+.info {
+    color: var(--info);
+}
+
+.light {
+    color: var(--light);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+/* Backgrounds */
+
+.bg-primary {
+    background: var(--primary);
+}
+
+.bg-secondary {
+    background: var(--secondary);
+}
+
+.bg-success {
+    background: var(--success);
+}
+
+.bg-fail {
+    background: var(--fail);
+}
+
+.bg-danger {
+    background: var(--danger);
+}
+
+.bg-warning {
+    background: var(--warning)
+}
+
+.bg-info {
+    background: var(--info);
+}
+
+.bg-light {
+    background: var(--light);
+}
+
+.bg-dark {
+    background: var(--dark);
+}
+
+/* ------------------- Addons ( Bootstrap 4 ) ------------------- */
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+  }
+  
+  ol,
+  ul,
+  dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  ol ol,
+  ul ul,
+  ol ul,
+  ul ol {
+    margin-bottom: 0;
+  }
+
+  dt {
+    font-weight: 700;
+  }
+  
+  dd {
+    margin-bottom: .5rem;
+    margin-left: 0;
+  }
+  
+  blockquote {
+    margin: 0 0 1rem;
+  }
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  small {
+    font-size: 80%;
+  }
+  
+  sub,
+  sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -.25em;
+  }
+  
+  sup {
+    top: -.5em;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a:not([href]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 1em;
+  }
+  
+  pre {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: auto;
+    -ms-overflow-style: scrollbar;
+  }
+  
+  figure {
+    margin: 0 0 1rem;
+  }
+  
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  svg {
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  caption {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #6c757d;
+    text-align: left;
+    caption-side: bottom;
+  }
+  
+  th {
+    text-align: inherit;
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    border-radius: 0;
+  }
+  
+  
+  
+  input,
+  select,
+  optgroup,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  [role="button"] {
+    cursor: pointer;
+  }
+  
+  select {
+    word-wrap: normal;
+  }
+  
+
+  textarea {
+    overflow: auto;
+    resize: vertical;
+  }
+  
+  
+  
+  legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
+  }
+  
+  progress {
+    vertical-align: baseline;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  code {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-wrap: break-word;
+  }
+ 
+
+/* ------ Navigation bar (Not finished) ------ */
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0.5rem 1rem;
+}
+.nav-main , .nav-item {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav-main:hover , .nav-item:hover {
+    text-decoration: none;
+}
+.nav-main {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.nav-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* Pre-made custom navs */
+
+.nav-primary {
+    background: var(--primary);
+    color: white;
+}
+.nav-primary .nav-item {
+    color: #ffffff8c;
+    background: var(--primary);
+    height: 100%;
+}
+.nav-primary .nav-item:hover {
+    color: rgb(255, 255, 255);
+}
+.nav-primary .nav-main {
+    color: white;
+    background: var(--primary);
+}
+
+.nav-secondary {
+    background: var(--secondary);
+    color: white;
+
+}
+.nav-secondary .nav-item {
+    color: #ffffff8c;
+    background: var(--secondary);
+    height: 100%;
+}
+.nav-secondary .nav-item:hover {
+    color: rgb(255, 255, 255);
+}
+.nav-secondary .nav-main {
+    color: white;
+    background: var(--secondary);
+}
+.nav-success {
+    background: var(--success);
+    color: white;
+
+}
+.nav-success .nav-item {
+    color: #ffffff8c;
+    background: var(--success);
+    height: 100%;
+}
+.nav-success .nav-item:hover {
+    color: rgb(255, 255, 255);
+}
+.nav-success .nav-main {
+    color: white;
+    background: var(--success);
+}
+
+.nav-light {
+    background: var(--light);
+    color: #333;
+
+}
+.nav-light .nav-item {
+    color: rgba(0, 0, 0, .55);
+    background: var(--light);
+    height: 100%;
+}
+.nav-light .nav-item:hover {
+    color: #000;
+}
+.nav-light .nav-main {
+    color: #000;
+    background: var(--light);
+}
+.nav-dark {
+    background: var(--dark);
+    color: white;
+}
+.nav-dark .nav-item {
+    color: #ffffff8c;
+    background: var(--dark);
+    height: 100%;
+}
+.nav-dark .nav-item:hover {
+    color: rgb(255, 255, 255);
+}
+.nav-dark .nav-main {
+    color: white;
+    background: var(--dark);
+}
+
+/* That bread-thing idk its name lets call it link navigator */
+
+.link-navigator {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+  
+  .link-navigator-item {
+    display: flex;
+  }
+  
+  .link-navigator-item + .link-navigator-item {
+    padding-left: 0.5rem;
+  }
+  
+  .link-navigator-item + .link-navigator-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "/";
+    text-decoration: none;
+  }
+  
+  .link-navigator-item + .link-navigator-item:hover::before {
+    text-decoration: underline;
+  }
+  
+  .link-navigator-item + .link-navigator-item:hover::before {
+    text-decoration: none;
+  }
+  
+  .link-navigator-item.active {
+    color: #6c757d;
+  }
