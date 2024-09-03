@@ -1,0 +1,112 @@
+Documentation for Modern Library :
+----------------------------------
+
+Thanks for using Modern Library. Make sure to give a feedback and report bugs.
+
+
+First : CSS :
+-------------    
+Basically like bootstarp, you can utilize it by using the pre-made classes in modern.css file by linking it to the .html file.
+
+Color pallette : ( primary, secondary, success, fail, warning, info, light, dark, redLink, blueLink, basic ) for main colors and ( hprimary, hsecondary, hsuccess, hfail, hwarning, hinfo, hlight, hdark, hredLink, hblueLink, hbasic ) for hover color effects.
+
+Div side paddings : .section-1 , .section-2, .section-3, .section-full
+
+Buttons : must use 2 classes .btn and .btn-color -------> as : class=".btn .btn-primary" 
+        Available colors : all + .btn-block
+
+Outline buttons : same as buttons but use ( .btn-outline-color ) instead of ( .btn-color )
+
+inputs : .input-s, .input-m, .input-l, .input-xl, .input-xxl, .input-max
+
+Fonts : .f1 until .f10
+
+Text Formats : .align-center, .align-right, .align-left, .f-left, .f-right, .underlined, .bold, .italic
+
+Colors and backgrounds : for colors use ( .color ) and for bgs use (.bg-color )
+
+Nav bar ( still in progress ) : .nav-bar to assign a nav bar element
+                                .nav-main to assign a main link / slogan in nav bar
+                                .nav-item to assign a nav item
+                                .nav-text to assign a text written inside a nav bar
+               Available colors : .nav-primary, .nav-secondary, .nav-success, .nav-light, .nav-dark
+
+Link Navigator : .link-navigator is used to assign a link navigator and .link-navigator-item is used to assign an item for the link navigator ( link breadcrumbs in bootstrap i guess)
+
+Disclaimer : all css codes still not coded to be fully responsive so expect some bugs / glitches on other monitors.
+
+
+Second : dom JavaScript :
+-------------------------
+This is used to ease the usage of dom properties of javascript as best as possible.
+In order to use it, type it like this :          dom.method1().method2();
+
+Here the list of methods with its parameters ( if found ) :
+
+locate(directory) : to locate an element in the html file. Similar to querySelector(); method. It's essential for the usage of many other methods.
+
+extract(directory) : to return the directory of an element
+
+html(code) : rewrites the inner HTML code of an element. Type it like :         dom.locate(dir).html(code);
+
+text(txt) : rewrites the text shown of an element ( if it is dislayed )
+
+hide() and show() : to display or hide an element
+
+doElement(element, value) and appender(directory) : use doElement() to create and html element with optionality of giving it a value and use appender() to attach this element to another element like a div or smth
+
+doClass(value) and doId(value) : to create a class / id 
+reClass(value) and reId(value) : to change the value of a class / id
+deClass() and deId() : to remove class / id
+
+doAttr(attr, value) : to make an attribute of an element with assigning its value
+reAttr(attr, value) : to change the value of a certain attribute
+deAttr(attr) : to remove a certain attribute
+
+contains(directory of an element) : to display the contains of an element
+
+style(css code) : to add css code for an element. HINT : other styles must NOT be inline in order to function
+
+extractStyle(directory) : to return the css codes of an element
+
+Example :      dom.locate("h1").text("Hello, world!"); -------> Here I located the h1 element and changed its text to "Hello, world!"
+
+
+
+Second : maths JavaScript :
+---------------------------
+More maths I guess .....
+In order to use type like this :            maths.method();
+
+range(n) : basically like the range() function in python it returns an array containing numbers from 1 to n
+
+max(array) and min(array) : returns the maximum and minimum values of an array
+
+add(n1, n2) , minus(n1, n2) , mult(n1, n2) , div(n1 , n2) : self explanatory I guess .....
+
+sqrt(n) : return the square root of an element
+
+isEven(n) : returns true if the number is even and false if not
+isOdd(n) : returns true is the number is odd and false if not
+isPrime(n) : returns true if the number is prime and false if not
+
+factorial(n) : returns the factorial of a number
+
+toRadian(degree) and toDegree(radian) : changes from radian to degree and vice versa
+
+addInv(n) : finds the additive inverse of a number
+
+pythagoras(side1, side2, hypotenuse) : finds the missing side of a triangle using pytagoras theorem. HINT : type the missing side value (null) while calling the method
+                                    Example :     maths.pythagoras(6, 8, null);  -------------> it'll return 10
+
+sin(radian angle)
+cos(radian angle)
+tan(radian angle)
+sinh(radian angle)
+cosh(radian angle)
+tanh(radian angle)
+
+approx(n) : radian angleasically approximates a number to the nearest integer
+
+Some constants :        maths.pi;    and     maths.euler;
+
