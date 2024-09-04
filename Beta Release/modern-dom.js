@@ -91,9 +91,6 @@ class DOM {
         this.location.removeAttribute(attr);
         return this;
     }
-    /* event(event, func) {
-        this.location.addEventListener(event, func);
-    } */
     contains(element) {
         return this.location.contains(element);
     }
