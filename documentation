@@ -84,7 +84,8 @@ max(array) and min(array) : returns the maximum and minimum values of an array
 
 add(n1, n2) , minus(n1, n2) , mult(n1, n2) , div(n1 , n2) : self explanatory I guess .....
 
-sqrt(n) : return the square root of an element
+sqrt(n) : returns the square root of an element
+cbrt(n) : returns the cubic root of an element
 
 isEven(n) : returns true if the number is even and false if not
 isOdd(n) : returns true is the number is odd and false if not
@@ -98,6 +99,12 @@ addInv(n) : finds the additive inverse of a number
 
 pythagoras(side1, side2, hypotenuse) : finds the missing side of a triangle using pytagoras theorem. HINT : type the missing side value (null) while calling the method
                                     Example :     maths.pythagoras(6, 8, null);  -------------> it'll return 10
+
+secDegreeEq(a, b, c) : finds the solution set of a second degree function and returns them a an array
+a : coefficient of x^2
+b : coefficient of x
+c : absolute term
+HINT : if the solution of the equation is a complex number, it'll return an array of (NaN)
 
 sin(radian angle)
 cos(radian angle)
