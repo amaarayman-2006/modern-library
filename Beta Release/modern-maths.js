@@ -62,6 +62,9 @@ class Mathematics {
             return Math.sqrt(n) + "i";
         }
     } 
+    cbrt(n) {
+        return Math.cbrt(n);
+    }
     isEven(n) {
         if (n % 2 == 0) {
             return true;
@@ -101,17 +104,6 @@ class Mathematics {
     addInv(n) {
         return n * (-1);
     }
-    /* ---------------------------------------------- Use addInv() here instead --------------------------- 
-    toPositive(n) {
-        // n = (n) ** 2;
-        // return Math.sqrt(n);
-        n = n - (n) - (n);
-        return n;
-    }
-    toNegative(n) {
-        return n - n - n;
-    }
-        */
     pythagoras(s1, s2, hypo) {
         if (hypo == null || hypo == undefined) {
             s1 **= 2; 
@@ -130,7 +122,8 @@ class Mathematics {
         }
     }
     secDegreeEq(a, b, c) {
-        
+        let x = [(-1 * b + this.sqrt(b ** 2 - 4 * a * c)) / (2 * a), (-1 * b - this.sqrt(b ** 2 - 4 * a * c)) / (2 * a)];
+        return x;
     }
     sin(angleRadian) {
         return Math.sin(angleRadian);
