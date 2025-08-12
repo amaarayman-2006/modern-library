@@ -3,6 +3,12 @@ Documentation for Modern Library :
 
 Thanks for using Modern Library. Make sure to give a feedback and report bugs.
 
+Library CDNs :
+--------------
+
+CSS CDN : https://cdn.jsdelivr.net/gh/amaarayman-2006/modern-library@main/Beta%20Release/modern.css
+JS DOM CDN : https://cdn.jsdelivr.net/gh/amaarayman-2006/modern-library@main/Beta%20Release/modern-dom.js
+JS Math CDN : https://cdn.jsdelivr.net/gh/amaarayman-2006/modern-library@main/Beta%20Release/modern-maths.js
 
 First : CSS :
 -------------    
